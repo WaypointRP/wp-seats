@@ -47,11 +47,12 @@ RegisterNetEvent("wp-seats:client:sitOnChair", function(itemData)
 	local playerPos = GetEntityCoords(playerPed)
 
 	local chairEntity = itemData.entity
-	local scenario = itemData.scenario
-	local offset = itemData.offset
-	local headingOffset = offset.heading or 180.0
+	local chairConfig = Config.Seats[itemData.itemModel]
+	local scenario = chairConfig.scenario
+	local offset = chairConfig.offset
+	local headingOffset = (offset and offset.heading) or 180.0
 	-- Options are optional and may not be defined
-	local options = itemData.options
+	local options = chairConfig.options
 	local timeout = (options and options.timeout) or Config.SitScenarioTimeout
 
 	-- Check the entity statebag to see if its occupied by another player
@@ -121,9 +122,7 @@ CreateThread(function()
                         event = "wp-seats:client:sitOnChair",
                         icon = "fas fa-chair",
                         label = "Sit down",
-						scenario = seat.scenario,
-						offset = seat.offset,
-						options = seat.options
+						itemModel = seat.model,
                     }
                 },
                 distance = 2
