@@ -14,9 +14,9 @@ Config.Target = 'qb'        -- 'qb', 'ox'
 -- You can adjust the invidivual time on each seat via options.timeout
 Config.SitScenarioTimeout = 6000
 
--- X offset moves it left/right
--- Y offset moves it forward/back
--- Z offset moves it up/down
+-- Add seats here
+-- Offsets: x: left/right, y: forward/back, z: up/down
+-- skipTarget: set to true if defined for TargetModel in another script (ex: wp-placeables)
 Config.Seats = {
 	-- BENCH
     { model = "prop_bench_01a", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.0, z = 0.0 }},
@@ -48,7 +48,7 @@ Config.Seats = {
 	{ model = "prop_chair_05", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.0, z = 0.0 }},
 	{ model = "prop_chair_06", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.0, z = 0.0 }},
 	{ model = "prop_chair_05", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.0, z = 0.0 }},
-	{ model = "prop_chair_08", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = -0.25, z = 0.0 }},
+	{ model = "prop_chair_08", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = -0.25, z = 0.0 }, skipTarget = true},
 	{ model = "prop_chair_09", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.0, z = 0.0 }},
 	{ model = "prop_chair_10", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.0, z = 0.0 }},
 	{ model = "prop_chateau_chair_01", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.0, z = 0.0 }},
@@ -70,7 +70,7 @@ Config.Seats = {
 	{ model = "prop_skid_chair_02", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = -0.1, y = 0.0, z = -0.2 }, skipTarget = true},
 	{ model = "prop_skid_chair_03", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = -0.1, y = 0.0, z = -0.2 }, skipTarget = true},
 	{ model = "prop_chair_08", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.1, y = 0.0, z = -0.23 }},
-	{ model = "xm3_prop_xm3_folding_chair_01a", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.1, z = 0.0 }},
+	{ model = "xm3_prop_xm3_folding_chair_01a", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.1, z = 0.0 }, skipTarget = true},
 	{ model = "prop_sol_chair", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.0, z = 0.0 }},
 	{ model = "prop_wheelchair_01", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.0, z = -0.2 }},
 	{ model = "prop_wheelchair_01_s", scenario = 'PROP_HUMAN_SEAT_BENCH', offset = { x = 0.0, y = 0.0, z = 0.0 }},

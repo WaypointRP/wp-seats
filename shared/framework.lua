@@ -45,39 +45,7 @@ function Notify(text, notificationType, src)
     end
 end
 
----@param source number|nil The source of the player
----@return table PlayerData The player data of the player
-function GetPlayerData(source)
-    local Core = GetCoreObject()
-    if IsDuplicityVersion() then
-        if Config.Framework == 'esx' then
-            return Core.GetPlayerFromId(source)
-        elseif Config.Framework == 'qb' then
-            return Core.Functions.GetPlayer(source)
-        end
-    else
-        if Config.Framework == 'esx' then
-            return Core.GetPlayerData()
-        elseif Config.Framework == 'qb' then
-            return Core.Functions.GetPlayerData()
-        end
-    end
-end
-
 --------------------- CLIENT FUNCTIONS ---------------------
-
----@param name string The name of the event to trigger
----@param cb function The callback to call when the event is triggered
----@param ... any The arguments to pass to the event
----@return any The return value of the event
-function TriggerCallback(name, cb, ...)
-    if IsDuplicityVersion() then return end
-    if Config.Framework == 'esx' then
-        return Core.TriggerServerCallback(name, cb, ...)
-    elseif Config.Framework == 'qb' then
-        return Core.Functions.TriggerCallback(name, cb, ...)
-    end
-end
 
 -- Takes a prop model and the targetOptions and adds it to the target script so that this prop model is targetable
 ---@param model string The name of the prop model to target
@@ -100,21 +68,3 @@ function AddTargetModel(modelName, targetOptions)
 end
 
 --------------------- SERVER FUNCTIONS ---------------------
-
-function CreateCallback(...)
-    if not IsDuplicityVersion() then return end
-    if Config.Framework == 'esx' then
-        return Core.RegisterServerCallback(...)
-    elseif Config.Framework == 'qb' then
-        return Core.Functions.CreateCallback(...)
-    end
-end
-
-function CreateUseableItem(...)
-    if not IsDuplicityVersion() then return end
-    if Config.Framework == 'esx' then
-        return Core.RegisterUsableItem(...)
-    elseif Config.Framework == 'qb' then
-        return Core.Functions.CreateUseableItem(...)
-    end
-end
