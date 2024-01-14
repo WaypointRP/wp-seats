@@ -8,7 +8,7 @@ This script also works well with [Waypoint Placeables](https://github.com/Waypoi
 
 > Note: If the players path to walk to and sit down on the chair is obstructed, there is a timeout (`Config.SitScenarioTimeout`) that will run and teleport the player into the chair after the timeout. This adds more flexibility and lets players sit in chairs that are close to tables or other objects.
 
-Preview: TODO: Video link
+Preview: https://youtu.be/dxhkJY5AXkM
 
 ## Usage
 - Target chair and sit in the chair
