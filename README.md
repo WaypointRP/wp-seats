@@ -2,7 +2,9 @@
 
 ![wp-seats](https://github.com/WaypointRP/wp-seats/assets/18689469/033bc050-8ad7-4d49-a9de-793e4db74710)
 
-Waypoint Seats is a simple, standalone script that adds a "sit" target option to chairs around the map. This script also works well with [Waypoint Placeables](https://github.com/WaypointRP/wp-placeables), users can carry chair items and place them anywhere around the map (such as folding camping chairs, plastic chairs, etc), allowing them to put together their own seating areas anywhere they want.
+Waypoint Seats is a simple, standalone script that adds a "sit" target option to chairs around the map. 
+
+This script also works well with [Waypoint Placeables](https://github.com/WaypointRP/wp-placeables), users can carry chair items and place them anywhere around the map (such as folding camping chairs, plastic chairs, etc), allowing them to put together their own seating areas anywhere they want.
 
 > Note: If the players path to walk to and sit down on the chair is obstructed, there is a timeout (`Config.SitScenarioTimeout`) that will run and teleport the player into the chair after the timeout. This adds more flexibility and lets players sit in chairs that are close to tables or other objects.
 
@@ -33,7 +35,7 @@ Preview: TODO: Video link
             label = "Sit down",
         },
     } 
-```
+   ```
 
 ## Dependencies
 Aside from a targetting script, this script is standalone and does not require any other resources to function.
