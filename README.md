@@ -24,6 +24,17 @@ Preview: TODO: Video link
    - Or if you see an object in game you can use your admin menu delete laser to get the prop name or hash.
    > Note: Chairs in custom MLOs may or may not work. It is dependent on how the MLO was created. If the MLO uses the actual prop for the chair, then it will work. If the MLO has the chair baked into the MLO, then it will not work.
 
+4. Optional: If using  [Waypoint Placeables](https://github.com/WaypointRP/wp-placeables), uncomment these lines in `wp-placeables/shared/config.lua`:
+   ```
+   local chairCustomTargetOptions = {
+        {
+            event = "wp-seats:client:sitOnChair",
+            icon = "fas fa-chair",
+            label = "Sit down",
+        },
+    } 
+```
+
 ## Dependencies
 Aside from a targetting script, this script is standalone and does not require any other resources to function.
 
