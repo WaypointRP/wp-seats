@@ -24,7 +24,7 @@ Preview: https://youtu.be/dxhkJY5AXkM
 3. Optionally add more chair models to the config file. You can use the prop model name or the hash. 
    - You can find additional props on [Pleb Masters: Forge](https://forge.plebmasters.de/objects)
    - Or if you see an object in game you can use your admin menu delete laser to get the prop name or hash.
-   > Note: Chairs in custom MLOs may or may not work. It is dependent on how the MLO was created. If the MLO uses the actual prop for the chair, then it will work. If the MLO has the chair baked into the MLO, then it will not work.
+   > Note: Chairs in custom MLOs may or may not work. It is dependent on how the MLO was created. If the MLO uses the actual prop for the chair, then it should work. If the MLO has the chair baked into the MLO, then it will not work. If the model id does not work, you may have luck getting the name of the entity through codewalker.
 
 4. Optional: If using  [Waypoint Placeables](https://github.com/WaypointRP/wp-placeables), uncomment these lines in `wp-placeables/shared/config.lua`:
    ```
