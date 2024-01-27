@@ -36,6 +36,7 @@ Preview: https://youtu.be/dxhkJY5AXkM
         },
     } 
    ```
+> Note: If you are using `ox` for any of the Framework options you need to uncomment `@ox_lib/init.lua` in the fxmanifest.lua.
 
 ## Dependencies
 Aside from a targetting script, this script is standalone and does not require any other resources to function.
