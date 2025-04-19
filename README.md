@@ -43,7 +43,7 @@ Aside from a targetting script, this script is standalone and does not require a
 
 - QBCore / OX for Target
 - Optional:
-  - QBCore / Qbox, ESX / Or other frameworks (must implement framework specific solutions in framework.lua)
+  - QBCore / Qbox / ESX / Or other frameworks (must implement framework specific solutions in framework.lua)
   - QBCore / ESX / OX for Notifications
 
 ## Credit
