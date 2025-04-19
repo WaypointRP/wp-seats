@@ -11,11 +11,11 @@ Config.Framework = "qb"
 
 -- The notification script you are using.
 --- @type "qb" | "esx" | "ox" | "none"
-Config.Notify = "ox"
+Config.Notify = "qb"
 
 -- The target script you are using.
 --- @type "qb"  | "ox"
-Config.Target = "ox"
+Config.Target = "qb"
 
 ------------------------------------
 --- END FRAMEWORK / SCRIPT CONFIGURATION
