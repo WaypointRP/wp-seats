@@ -3,7 +3,7 @@ game "gta5"
 
 description "Waypoint Seats"
 author "BackSH00TER - Waypoint RP"
-version "1.0.1"
+version "1.0.2"
 
 shared_script {
     -- "@ox_lib/init.lua", -- Uncomment this if you are planning to use any ox scripts (such as ox notify)
@@ -13,6 +13,10 @@ shared_script {
 
 client_scripts {
     "client.lua",
+}
+
+server_scripts {
+    "server.lua",
 }
 
 lua54 "yes"
